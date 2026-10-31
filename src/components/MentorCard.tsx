@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, type Variants } from 'framer-motion'
 import { Briefcase, Calendar, Star, Zap } from 'lucide-react'
 import type { Mentor } from '../types'
@@ -176,7 +177,10 @@ export default function MentorCard({ mentor }: { mentor: Mentor }) {
         </motion.article>
       </motion.div>
 
-      <BookingModal open={open} mentorName={mentor.name} onClose={() => setOpen(false)} />
+      {createPortal(
+        <BookingModal open={open} mentorName={mentor.name} onClose={() => setOpen(false)} />,
+        document.body,
+      )}
     </>
   )
 }
