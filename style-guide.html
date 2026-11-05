@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Style guide | Isha Health Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>:root{--bg:#E7F0EC;--card:#fff;--ink:#1D4344;--ink2:#4A6866;--teal:#2C5E5E;--teal2:#1C4243;--sage:#D2E3DC;--sage2:#E7F0EC;--line:#D3E2DC;--mut:#93ABA6;--deep:#0c1a1a;--gold:#E0A53A;--serif:'Newsreader',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;--r-s:8px;--r-m:12px;--r-l:16px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--sans)}.w{width:min(1172px,100% - 32px);margin:0 auto;padding-block:32px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;letter-spacing:-.015em}h1{font-size:clamp(40px,6vw,72px);line-height:1.05}h2{font-size:clamp(28px,4vw,44px);margin-bottom:6px}
+.p{background:#fff;border-radius:var(--r-l);padding:clamp(24px,4vw,48px);margin-top:16px}.p>p{color:var(--ink2);margin:0 0 24px;max-width:640px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}.sw{border-radius:var(--r-s);overflow:hidden;border:1px solid var(--line)}.sw i{display:block;height:84px}.sw div{padding:10px 12px;font-size:13px}.sw b{display:block}
+.btn{display:inline-flex;align-items:center;gap:12px;border:0;border-radius:999px;padding:8px 8px 8px 22px;font:600 12.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none}.btn .ci{width:32px;height:32px;border-radius:50%;display:grid;place-items:center}
+.bp{background:var(--teal2);color:#fff}.bp .ci{background:#fff;color:var(--teal2)}.bw{background:#fff;color:var(--teal2);box-shadow:inset 0 0 0 1px var(--line)}.bw .ci{background:var(--teal2);color:#fff}.bo{background:none;color:var(--teal2);box-shadow:inset 0 0 0 1.5px var(--teal2);padding:13px 22px}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.dark{background:var(--teal2);padding:20px;border-radius:var(--r-m)}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.box{height:70px;background:var(--sage);display:grid;place-items:center;font-size:13px}.tile{background:var(--sage2);border-radius:var(--r-s);padding:18px 20px;font-weight:500}</style></head><body><div class="w">
+<h1>Isha Health Solutions<br>Design system</h1><p style="color:var(--ink2);max-width:640px">Tokens, components and layout rules used on the homepage. Every value below is a CSS variable in <code>index.html</code>.</p>
+
+<section class="p"><h2>Colour</h2><p>A calm sage and teal palette. Teal carries actions and dark sections, sage carries surfaces.</p><div class="g">
+<div class="sw"><i style="background:#E7F0EC"></i><div><b>Page / sage-2</b>#E7F0EC · --bg</div></div>
+<div class="sw"><i style="background:#D2E3DC"></i><div><b>Sage</b>#D2E3DC · --sage</div></div>
+<div class="sw"><i style="background:#fff"></i><div><b>Card</b>#FFFFFF · --card</div></div>
+<div class="sw"><i style="background:#2C5E5E"></i><div><b>Teal</b>#2C5E5E · --teal</div></div>
+<div class="sw"><i style="background:#1C4243"></i><div><b>Deep teal</b>#1C4243 · --teal2</div></div>
+<div class="sw"><i style="background:#0C1A1A"></i><div><b>Night</b>#0C1A1A · --deep</div></div>
+<div class="sw"><i style="background:#1D4344"></i><div><b>Ink</b>#1D4344 · --ink (text)</div></div>
+<div class="sw"><i style="background:#4A6866"></i><div><b>Ink 2</b>#4A6866 · --ink2 (secondary text)</div></div>
+<div class="sw"><i style="background:#93ABA6"></i><div><b>Muted</b>#93ABA6 · --mut</div></div>
+<div class="sw"><i style="background:#D3E2DC"></i><div><b>Line</b>#D3E2DC · --line</div></div>
+<div class="sw"><i style="background:#E0A53A"></i><div><b>Focus</b>#E0A53A · --gold</div></div></div></section>
+
+<section class="p"><h2>Typography</h2><p>Newsreader regular for headlines, never italic, Figtree for everything else.</p>
+<table><tr><th>Role</th><th>Spec</th><th>Sample</th></tr>
+<tr><td>Hero</td><td>Newsreader 400 · clamp 44–84</td><td><h1 style="font-size:44px">Explore a thoughtful approach</h1></td></tr>
+<tr><td>H2</td><td>Newsreader 400 · clamp 32–52 · 1.08</td><td><h2>Section heading</h2></td></tr>
+<tr><td>H3</td><td>Newsreader 400 or Figtree 600 uppercase for card titles</td><td><h3 style="font-size:26px">Card title</h3></td></tr>
+<tr><td>Body</td><td>Figtree 400 · 15–16.5 · 1.6 · colour ink-2</td><td>Experience healthcare where modern medicine, Ayurveda, Siddha and Yogic sciences work in tandem.</td></tr>
+<tr><td>Label</td><td>Figtree 700 · 11–12 · +0.12em · uppercase</td><td style="font:700 12px var(--sans);letter-spacing:.12em;text-transform:uppercase">Care for every health need</td></tr></table></section>
+
+<section class="p"><h2>Shape and spacing</h2><p>Three subtle radii (8, 12, 16), one pill for buttons. Spacing steps are multiples of 8.</p><div class="g">
+<div class="box" style="border-radius:8px">--r-s 8</div><div class="box" style="border-radius:12px">--r-m 12</div><div class="box" style="border-radius:16px">--r-l 16</div><div class="box" style="border-radius:999px">pill</div></div>
+<p style="margin-top:20px">Spacing: 8 · 16 · 24 · 40 · 64. Container 1172px max, 16px gutter on phones. Section gap between cards 10–18px.</p></section>
+
+<section class="p"><h2>Buttons</h2><p>Pill with a circular arrow. One primary per view.</p><div class="row">
+<a class="btn bp" href="#">Quick Booking<span class="ci">→</span></a><a class="btn bw" href="#">Explore now<span class="ci">→</span></a><a class="btn bo" href="#">Secondary</a></div>
+<div class="dark" style="margin-top:16px"><a class="btn bw" href="#" style="background:#fff">On dark<span class="ci">→</span></a></div></section>
+
+<section class="p"><h2>Cards and tiles</h2><p>White cards sit on the sage page. Tiles inside a white card are sage-2, so there is always one step of contrast.</p><div class="g"><div class="tile">Programs tile</div><div class="tile">Programs tile</div></div></section>
+
+<section class="p"><h2>Layout rules</h2><table>
+<tr><th>Mode</th><th>Sections</th><th>Rule</th></tr>
+<tr><td>End to end</td><td>Hero, four pillars, journey, VR tour</td><td>Full-width band, content in the 1172px container.</td></tr>
+<tr><td>Centred card</td><td>Programs, testimonials, philosophy, doctors, insights, FAQ, form, not sure</td><td>White (or deep teal / sage) rounded card, radius 16, padding 28–64, white space on both sides.</td></tr></table></section>
+
+<section class="p"><h2>Behaviour</h2><table>
+<tr><td>Hover</td><td>No hover motion on cards. Only the four pillar cards flip.</td></tr>
+<tr><td>Tap targets</td><td>Minimum 44px tall for links and buttons.</td></tr>
+<tr><td>Focus</td><td>Gold 3px ring on interactive elements.</td></tr>
+<tr><td>Motion</td><td>Respects prefers-reduced-motion; scroll sections fall back to static.</td></tr>
+<tr><td>Breakpoints</td><td>1000 (2 columns) · 860 · 760 (nav compacts) · 520 (1 column)</td></tr></table></section>
+</div></body></html>
